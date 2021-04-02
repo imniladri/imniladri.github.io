@@ -1,3 +1,7 @@
+$(window).on('load', function() {
+	$('#preloader').css({'transform' : 'translateY(100%'});
+});
+
 VanillaTilt.init(document.querySelectorAll(".cards"), {
 	max: 20,
 	speed: 400,
