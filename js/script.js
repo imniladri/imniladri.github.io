@@ -1,5 +1,8 @@
 $(window).on('load', function() {
-	$('#preloader').css({'transform' : 'translateY(100%'});
+	$('#preloader').css({
+		'transform' : 'translateY(100%',
+		'opacity' : '0',
+	});
 });
 
 VanillaTilt.init(document.querySelectorAll(".cards"), {
