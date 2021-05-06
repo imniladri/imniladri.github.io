@@ -1,288 +1,85 @@
-/* STYLES CSS FOR INDEX PAGE */
+/* Index Styles of Index Page */
 /* Created By Niladri Mondal */
+
+/*===================================== Imports =======================================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
 
 /*======================================= General ========================================*/
 
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-	font-family: 'Quicksand', sans-serif;
-	background: #00081f url('../imgs/body_bg.jpg') center / cover;
+    font-family: "Rubik", sans-serif;
+    background: var(--mediumwhite);
 }
 
 /*===================================== Variables =======================================*/
 
+:root {
+    --darkblack: #222831;
+    --lightblack: #495464;
+
+    --darkmode_dark: #1b1b2f;
+    --darkmode_medium: #1f1f37;
+    --darkmode_light1: #2a284f;
+    --darkmode_light2: #2b2b3f;
+
+    --darkwhite: #ffffff;
+    --mediumwhite: #fafafa;
+    --lightwhite: #f1f6f9;
+
+    --lightgrey: #9ba4b4;
+    --mediumgrey: #dcdcdc;
+    --darkgrey: #393e46;
+
+    --lightyellow: #fddb3a;
+    --lightred: #ff005c;
+    --lightblue: #0075f6;
+    --lightgreen: #00ff7f;
+    --lightcyan: #20fdee;
+    --lightviolet: #6961f5;
+}
+
 /*======================================= Fonts =========================================*/
 
 @font-face {
-	font-family: 'Aquino';
-	src: url('../fonts/Aquino.ttf');
+    font-family: "Housttely";
+    src: url("../fonts/Housttely.ttf");
 }
 
 @font-face {
-	font-family: 'Axeon';
-	src: url('../fonts/Axeon.otf');
-}
-
-@font-face {
-	font-family: 'Housttely';
-	src: url('../fonts/Housttely.ttf');
-}
-
-@font-face {
-	font-family: 'Rocketto';
-	src: url('../fonts/Rocketto.ttf');
+    font-family: "RomateHood";
+    src: url("../fonts/RomateHood.otf");
 }
 
 /*====================================== Settings =======================================*/
 
 ::-webkit-scrollbar {
-	width: 10px;
-	height: 10px;
+    width: 10px;
+    height: 10px;
 }
 ::-webkit-scrollbar-thumb {
-	border-radius: 5px;
-	background: #FFFFFF;
+    border-radius: 5px;
+    background: var(--lightviolet);
 }
 
 ::selection {
-	color: #FFFFFF;
-	background: #FF4B5C;
+    color: var(--darkwhite);
+    background: var(--lightred);
 }
 
-.no-select {
-	-webkit-user-select: none !important;
-	-moz-user-select: none !important;
-	-ms-user-select: none !important;
-	user-select: none !important;
+img,
+.noselect {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
 }
 
 /*==================================== Loader Section =====================================*/
-
-#preloader {
-	position: fixed;
-	top: 0;left: 0;
-	width: 100%;
-	height: 100vh;
-	background: #f1f6f9;
-	z-index: 9999;
-	opacity: 1;
-	transition: all 0.8s ease;
-}
-
-#preloader h2 {
-	position: absolute;
-	top: 50%; left: 50%;
-	transform: translate(-50%,-50%);
-	font-size: 5rem;
-	font-family: 'Rocketto';
-	color: #14274e;
-	-webkit-text-stroke: 2px #14274e;
-	letter-spacing: 10px;
-	animation: blink 1.6s linear infinite;
-}
-
-@keyframes blink {
-	0% { opacity: 1 }
-	50% { opacity: 0 }
-	100% { opacity: 1 }
-}
-
-/*==================================== Neon Section =====================================*/
-
-#neon-container {
-	position: fixed;
-	top: 0; left: 0;
-	width: 100%;
-	height: 100%;
-	background: #00081f url('../imgs/neon_bg.png') fixed center / cover;
-	animation: hue 10s linear infinite alternate;
-}
-
-/*==================================== Glass Section =====================================*/
-
-#glass-container {
-	margin: 100vh 100px 100px;
-	border-radius: 10px;
-	background: rgba(250,250,250,0.1);
-	backdrop-filter: blur(4px);
-	box-shadow: 0 0 10px rgba(0,0,0,0.6);
-}
-
-@media (max-width: 768px) {
-	#glass-container {
-		margin: 100vh 10px 100px;
-	}
-}
-
-/*=============================== Keyframes Hue Animation ================================*/
-
-@keyframes hue {
-	0% {
-		filter: hue-rotate(0deg);
-	}
-	100% {
-		filter: hue-rotate(360deg);
-	}
-}
-
-/*==================================== Main Contents =====================================*/
-
-.container {
-	padding: 50px 10px;
-	position: relative;
-}
-
-/*==================================== Header Contents =====================================*/
-
-.container .header-contents {
-	margin: 50px auto;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
-.container .header-contents h4 {
-	margin: 10px auto;
-	font-size: 4rem;
-	font-family: 'Axeon';
-	color: #f1f6f9;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-}
-
-.container .header-contents h2 {
-	margin: 100px auto;
-	font-size: 3rem;
-	font-weight: 700;
-	font-family: 'Housttely';
-	color: #f1f6f9;
-	text-align: center;
-	letter-spacing: 3px;
-	word-spacing: 5px;
-}
-
-@media (max-width: 1100px) {
-	.container .header-contents h4 {font-size: 3rem;}
-	.container .header-contents h2 {font-size: 2rem;}
-}
-
-@media (max-width: 768px) {
-	.container .header-contents h4 {font-size: 3rem;}
-	.container .header-contents h2 {font-size: 1.5rem;}
-}
-
-@media (max-width: 500px) {
-	.container .header-contents h2 {line-height: 90px;}
-}
-
-.container .header-contents a {
-	position: relative;
-	margin: 20px auto;
-	padding: 8px 30px;
-	font-size: 1.4rem;
-	font-weight: 400;
-	font-family: 'Aquino';
-	word-spacing: 2px;
-	color: #14274e;
-	background: #f1f6f9;
-	border: 3px solid #f1f6f9;
-	border-radius: 30px;
-	box-shadow: 0 12px 30px rgba(0,0,0,0.2);
-	transition: all 0.8s ease-in-out;
-}
-
-.container .header-contents a:before {
-	content: 'My Profile';
-	position: absolute;
-	top: 0; left: 0;
-	width: 100%; height: 100%;
-	clip-path: circle(15% at 2% 50%);
-	padding: 8px 30px;
-	color: #f1f6f9;
-	background: #14274e;
-	border-radius: 30px;
-	transition: all 0.8s ease-in-out;
-}
-
-.container .header-contents a:hover:before {
-	clip-path: circle(15% at 98% 50%);
-}
-
-@media (max-width: 850px) {
-	.container .header-contents a {font-size: 1rem;}
-}
-
-/*==================================== Repo Contents =====================================*/
-
-.container .repo-contents {
-	margin: 30px auto;
-	position: relative;
-}
-
-.container .repo-contents h3 {
-	position: relative;
-	margin: 10px auto;
-	font-size: 5rem;
-	font-weight: 600;
-	font-family: 'Rocketto';
-	color: #f1f6f9;
-	text-align: center;
-	letter-spacing: 2px;
-	word-spacing: 10px;
-	transition: all 0.4s ease;
-}
-
-@media (max-width: 768px) {
-	.container .repo-contents h3 {
-		font-size: 4rem;
-	}
-}
-
-.container .repo-contents h3:after {
-	content: '';
-	position: absolute;
-	left: 50%; bottom: -10%;
-	transform: translateX(-50%);
-	width: 50%;
-	height: 5px;
-	background: #fafafa;
-	border-radius: 50%;
-}
-
-/*==================================== Repo Cards =====================================*/
-
-.container .repo-contents .repo-cards {
-	margin: 100px auto;
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.container .repo-contents .repo-cards a.cards {
-	position: relative;
-	margin: 10px 20px;
-	padding: 20px 40px;
-	background: rgba(255,255,255,0.1);
-	box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-	border-radius: 15px;
-	border: 2px solid rgba(255,255,255,0.15);
-	transform-style: preserve-3d;
-	transform: perspective(1000px);
-}
-
-.container .repo-contents .repo-cards a.cards img {
-	margin: 30px;
-	width: 80px;
-	height: 80px;
-	transform: translateZ(20px);
-	transition: all 0.3s ease;
-}
