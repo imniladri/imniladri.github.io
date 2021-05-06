@@ -17,7 +17,7 @@
 
 body {
     font-family: "Rubik", sans-serif;
-    background: var(--darkblack) url(../img/pattern_bg.jpg);
+    background: var(--darkmode_dark) url(../img/pattern_bg_dark.png);
     transition: all 0.2s ease;
 }
 
@@ -69,8 +69,8 @@ body {
 /*====================================== Settings =======================================*/
 
 ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 5px;
@@ -210,6 +210,97 @@ img,
     100% {
         transform: translate(-50%, -50%) scale(1);
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/*==================================== Header =====================================*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 60px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    z-index: 10;
+    border-bottom: 4px solid var(--lightcyan);
+
+    transform: translateY(-100%);
+    background: transparent;
+    box-shadow: none;
+}
+
+header.showHeader {
+    transform: translateY(0);
+    background: var(--darkmode_dark) url(../img/pattern_bg_dark.png);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+header nav a.navbar-brand {
+    margin: auto 5px;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Rancho", sans-serif;
+    color: var(--lightwhite);
+    letter-spacing: 2px;
+}
+
+header nav div.navbar-btn {
+    margin: auto 5px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav div.navbar-btn a {
+    margin: auto 10px;
+    padding: 10px;
+    background: var(--darkmode_light1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+header nav div.navbar-btn a:hover {
+    background: var(--lightviolet);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+header nav div.navbar-btn a img {
+    padding: 2px;
+    width: 32px;
+    height: 32px;
+}
+
+/* Header Responsive */
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 530px) {
+    header nav a.navbar-brand {
+        font-size: 1.4rem;
+    }
+    header nav div.navbar-btn a {
+        margin: auto 5px;
+    }
+    header nav div.navbar-btn a img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 392px) {
+    header nav {
+        flex-direction: column;
+    }
+    header nav div.navbar-btn {
+        margin: 10px auto auto;
     }
 }
 

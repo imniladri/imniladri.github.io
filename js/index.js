@@ -12,4 +12,20 @@ $(window).on("load", function () {
     });
 });
 
+// Scroll Event
+
+// $(window).scroll(function () {
+//     $("header").toggleClass("showHeader", window.scrollY > 1000);
+// });
+
+let header = document.getElementById("header");
+
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > window.innerHeight - 500) {
+        header.classList.add("showHeader");
+    } else {
+        header.classList.remove("showHeader");
+    }
+});
+
 // AOS.init();
