@@ -21,7 +21,7 @@ particlesJS(
                 },
             },
             color: {
-                value: "#ffba00",
+                value: "#6961f5",
             },
             shape: {
                 type: "circle",
@@ -44,16 +44,16 @@ particlesJS(
                 anim: {
                     enable: true,
                     speed: 1,
-                    opacity_min: 0.1,
+                    opacity_min: 0.2,
                     sync: false,
                 },
             },
             size: {
-                value: 100,
+                value: 50,
                 random: true,
                 anim: {
                     enable: true,
-                    speed: 100,
+                    speed: 10,
                     size_min: 0.1,
                     sync: false,
                 },
