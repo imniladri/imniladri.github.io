@@ -1,0 +1,34 @@
+/* Responsive Styles of Index Page */
+/* Created By Niladri Mondal */
+
+/*===================================== Header Responsive =======================================*/
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 530px) {
+    header nav a.navbar-brand {
+        font-size: 1.4rem;
+    }
+    header nav div.navbar-btn a {
+        margin: auto 5px;
+    }
+    header nav div.navbar-btn a img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 392px) {
+    header nav {
+        flex-direction: column;
+    }
+    header nav div.navbar-btn {
+        margin: 10px auto auto;
+    }
+}
+
+/*===================================== Banner Responsive =======================================*/
