@@ -6,7 +6,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Convergence&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
 
 /*======================================= General ========================================*/
 
@@ -56,15 +55,7 @@ body {
 
 /*======================================= Custom Fonts =========================================*/
 
-@font-face {
-    font-family: "Housttely";
-    src: url("../fonts/Housttely.ttf");
-}
-
-@font-face {
-    font-family: "RomateHood";
-    src: url("../fonts/RomateHood.otf");
-}
+@import url("../fonts/fonts.family.css");
 
 /*====================================== Settings =======================================*/
 
@@ -241,7 +232,8 @@ header nav a.navbar-brand {
     margin: auto 5px;
     font-size: 2rem;
     font-weight: 600;
-    font-family: "Rancho", sans-serif;
+    font-family: "Variex", sans-serif;
+    /* font-family: "Toxico", sans-serif; */
     color: var(--lightwhite);
     letter-spacing: 2px;
 }
@@ -305,3 +297,136 @@ header nav div.navbar-btn a img {
 }
 
 /*==================================== Banner =====================================*/
+
+section#banner {
+    position: relative;
+    height: 100vh;
+    background: url(../img/network.png) no-repeat right bottom / contain;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Wrapper: All Text */
+div.banner-wrapper .wrapper-text {
+    margin: auto 0;
+    padding: 20px 10px;
+    position: relative;
+}
+
+div.banner-wrapper .wrapper-text span.typograph {
+    margin: 20px auto;
+    margin-left: -140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Welcome Message */
+div.banner-wrapper .wrapper-text span.typograph p {
+    margin: 5px 10px;
+    padding: 10px 5px;
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: "Variex", sans-serif;
+    color: var(--darkmode_dark);
+    background: var(--lightcyan);
+    writing-mode: vertical-lr;
+    line-height: 70px;
+    transform: rotate(180deg);
+    letter-spacing: 7px;
+    /* text-orientation: upright; */
+}
+
+/* Profile Name Text */
+div.banner-wrapper .wrapper-text span.typograph h2 {
+    position: relative;
+    margin: auto 5px;
+    font-size: 4.5rem;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: var(--lightwhite);
+}
+
+div.banner-wrapper .wrapper-text span.typograph h2 span {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+    color: var(--lightcyan);
+}
+
+/* Profile Interest Text */
+div.banner-wrapper .wrapper-text h4 {
+    margin: 20px auto;
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: "Variex", sans-serif;
+    color: var(--lightyellow);
+    letter-spacing: 1px;
+}
+
+div.banner-wrapper .wrapper-text h4 span {
+    color: transparent;
+    -webkit-text-stroke: 2.4px var(--lightyellow);
+}
+
+/* Profile Buttons Group */
+div.banner-wrapper .wrapper-text .link-profile {
+    margin: 40px auto 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.banner-wrapper .wrapper-text .link-profile a.btn-profile {
+    position: relative;
+    margin: auto 10px;
+    padding: 6px 20px;
+    background: var(--darkmode_medium);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+div.banner-wrapper .wrapper-text .link-profile a.btn-profile:hover {
+    background: var(--lightwhite);
+}
+
+div.banner-wrapper .wrapper-text .link-profile a.btn-profile span {
+    margin: auto 2px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "Convergence", sans-serif;
+    color: var(--mediumwhite);
+    letter-spacing: 1.2px;
+}
+
+div.banner-wrapper .wrapper-text .link-profile a.btn-profile i {
+    margin: auto 2px;
+    font-size: 1.5rem;
+    color: var(--lightwhite);
+}
+
+div.banner-wrapper .wrapper-text .link-profile a.btn-profile:hover span,
+div.banner-wrapper .wrapper-text .link-profile a.btn-profile:hover i {
+    color: var(--darkmode_dark);
+}
+
+/* Wrapper: Laptop Image */
+div.banner-wrapper .wrapper-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.banner-wrapper .wrapper-img img {
+    width: 100%;
+    height: auto;
+}
+
+/*==================================== Projects =====================================*/
