@@ -229,6 +229,18 @@ header.showHeader {
 }
 
 header nav a.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a.navbar-brand img {
+    margin: auto 5px;
+    width: 46px;
+    height: 100%;
+}
+
+header nav a.navbar-brand span {
     margin: auto 5px;
     font-size: 2rem;
     font-weight: 600;

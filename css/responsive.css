@@ -10,7 +10,10 @@
 }
 
 @media (max-width: 530px) {
-    header nav a.navbar-brand {
+    header nav a.navbar-brand img {
+        width: 38px;
+    }
+    header nav a.navbar-brand span {
         font-size: 1.4rem;
     }
     header nav div.navbar-btn a {
