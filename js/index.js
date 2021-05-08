@@ -29,3 +29,7 @@ window.addEventListener("scroll", () => {
 });
 
 // AOS.init();
+
+// Rellax JS
+
+var rellax = new Rellax(".rellax");
