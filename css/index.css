@@ -65,7 +65,7 @@ body {
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background: var(--lightviolet);
+    background: var(--lightcyan);
 }
 
 ::selection {
@@ -316,7 +316,7 @@ div.banner-wrapper .wrapper-text span.typograph p {
     background: var(--lightcyan);
     writing-mode: vertical-lr;
     line-height: 70px;
-    transform: rotate(180deg);
+    transform: rotate(180deg) !important;
     letter-spacing: 7px;
     /* text-orientation: upright; */
 }
@@ -590,3 +590,51 @@ div.projects-wrapper .projects-cards:hover span.preview-links a:nth-child(4) {
 }
 
 /*==================================== Footer =====================================*/
+
+footer {
+    position: relative;
+    margin: 0 auto;
+    padding: 60px 20px 30px;
+    width: 100%;
+}
+
+footer hr {
+    margin: 20px auto;
+	width: 40%;
+	border-top: 2px dashed var(--lightgrey);
+}
+
+footer div.footer {
+    margin: 20px auto;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer div.footer img {
+    margin: 20px auto;
+    width: 60px;
+    height: 60px;
+}
+
+footer div.footer h3 {
+    margin: 10px auto;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+    color: var(--lightwhite);
+    letter-spacing: 1px;
+}
+
+footer div.footer h5 {
+    margin: 10px auto;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: "Quicksand", sans-serif;
+    color: var(--lightgrey);
+    letter-spacing: 1px;
+}
+
+/*==================================== Styles End =====================================*/
