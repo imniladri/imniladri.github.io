@@ -39,3 +39,36 @@ window.addEventListener("scroll", () => {
 // Rellax JS Initialisation
 
 var rellax = new Rellax(".rellax");
+
+// Sweetalert Toast: Empty Link Alert
+
+$.toast = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    confirmButtonText: '<i class="fa fa-times text-secondary"></i>',
+    confirmButtonColor: "transparent",
+    padding: "15px 20px",
+    showClass: { popup: "animated bounceIn" },
+    hideClass: { popup: "animated bounceOut" },
+    timer: 2000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+        toast.addEventListener("mouseenter", Swal.stopTimer);
+        toast.addEventListener("mouseleave", Swal.resumeTimer);
+    },
+});
+
+// Empty Link Click Event
+
+$("a[href='javascript:void(0);']").click(function () {
+    $.toast.fire({
+        icon: "warning",
+        title: "<span class='text-warning'>Link wasn't Updated!</span>",
+    });
+    $("a[href='javascript:void(0);']").attr("target", "_self");
+});
+
+$(document).ready(function () {
+    $("a").attr("target", "_blank");
+});
