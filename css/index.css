@@ -212,10 +212,10 @@ header {
     left: 0;
     width: 100%;
     padding: 10px 60px;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     transition-delay: 0.1s;
     z-index: 10;
-    border-bottom: 4px solid var(--lightcyan);
+    /* border-bottom: 4px solid var(--lightcyan); */
 
     transform: translateY(-100%);
     background: transparent;
@@ -225,7 +225,7 @@ header {
 header.showHeader {
     transform: translateY(0);
     background: var(--darkmode_dark) url(../img/pattern_bg_dark.png);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
 }
 
 header nav a.navbar-brand {
