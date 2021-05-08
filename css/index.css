@@ -477,7 +477,7 @@ div.projects-container .projects-wrapper .projects-cards {
     position: relative;
     margin: 40px 30px;
     padding: 20px 30px;
-    background: var(--darkmode_dark) url(../img/circuit_bg.png) no-repeat center / cover;
+    background: var(--darkmode_dark) url(../img/circuit_bg.png) no-repeat center / 150%;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 0 6px rgba(0, 0, 0, 0.4);
     border-radius: 6px;
     display: flex;
@@ -626,6 +626,7 @@ footer div.footer h3 {
     font-family: "Quicksand", sans-serif;
     color: var(--lightwhite);
     letter-spacing: 1px;
+    text-align: center;
 }
 
 footer div.footer h5 {
@@ -635,6 +636,7 @@ footer div.footer h5 {
     font-family: "Quicksand", sans-serif;
     color: var(--lightgrey);
     letter-spacing: 1px;
+    text-align: center;
 }
 
 /*==================================== Styles End =====================================*/
