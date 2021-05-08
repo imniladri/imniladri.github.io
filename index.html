@@ -41,6 +41,7 @@
 	<script defer src="./js/jquery-3.6.0.min.js"></script>
 	<script defer src="./js/bootstrap.bundle.min.js"></script>
 	<script defer src="./js/aos.min.js"></script>
+	<script defer src="./js/rellax.min.js"></script>
 	<script defer src="./js/particles.min.js"></script>
 	<script defer src="./js/sketch.app.js"></script>
 	<script defer src="./js/index.js"></script>
@@ -85,25 +86,27 @@
 		<div class="container banner-wrapper">
 			<div class="row">
 				<div class="col-md-8 wrapper-text">
-					<span class="typograph">
+					<span class="typograph rellax" data-rellax-speed="1">
 						<p>Hi</p>
 						<h2><span>I'm</span>Niladri Mondal</h2>
 					</span>
-					<h4>Front End <span>Developer</span></h4>
+					<h4 class="rellax" data-rellax-speed="-1">
+						Front End <span>Developer</span>
+					</h4>
 					<div class="link-profile">
-						<a href="#" class="btn btn-profile">
+						<a href="#" class="btn btn-profile rellax" data-rellax-speed="-1">
 							<i class="bx bxl-github"></i><span>GitHub</span>
 						</a>
-						<a href="#" class="btn btn-profile">
+						<a href="#" class="btn btn-profile rellax" data-rellax-speed="-2">
 							<i class="bx bxs-file"></i><span>Resume</span>
 						</a>
-						<a href="#" class="btn btn-profile">
+						<a href="#" class="btn btn-profile rellax" data-rellax-speed="-3">
 							<i class="bx bx-user-circle"></i><span>Profile</span>
 						</a>
 					</div>
 				</div>
 				<div class="col-md-4 wrapper-img">
-					<img src="./img/laptop.png" class="img-fluid" />
+					<img src="./img/laptop.png" class="img-fluid rellax" data-rellax-speed="-2" />
 				</div>
 			</div>
 		</div>
@@ -114,7 +117,7 @@
 	<section id="projects">
 		<div class="projects-container">
 
-			<div class="projects-head">
+			<div class="projects-head rellax" data-rellax-speed="-1">
 				<h2>My Projects</h2>
 				<img src="./img/logo.png" />
 			</div>
@@ -140,7 +143,7 @@
 					<img src="./img/projects/icon2.png" />
 					<h4>Project Name</h4>
 					<p>Lorem ipsum dolor sit amet consectetur.</p>
-				
+
 					<span class="preview-links">
 						<a href="#"><i class="bx bx-link"></i></a>
 						<a href="#"><i class="bx bx-code-alt"></i></a>
