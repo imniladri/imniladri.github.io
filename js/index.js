@@ -1,4 +1,4 @@
-// Loader
+// Loader Event
 
 $(window).on("load", function () {
     $("#preloader").css({
@@ -28,8 +28,14 @@ window.addEventListener("scroll", () => {
     }
 });
 
-// AOS.init();
+// AOS Initialisation
 
-// Rellax JS
+// AOS.init({
+//     delay: 0,
+//     duration: 1000,
+//     easing: "ease",
+// });
+
+// Rellax JS Initialisation
 
 var rellax = new Rellax(".rellax");
