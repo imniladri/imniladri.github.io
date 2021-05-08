@@ -465,7 +465,7 @@ div.projects-container .projects-head img {
 
 /* Projects Wrapper */
 div.projects-container .projects-wrapper {
-    margin: 40px auto;
+    margin: 100px auto 40px;
     padding: 20px 60px;
     display: flex;
     justify-content: space-between;
@@ -513,7 +513,7 @@ div.projects-container .projects-wrapper .projects-cards img {
 
 div.projects-container .projects-wrapper .projects-cards h4 {
     margin: 10px auto;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 600;
     font-family: "Rubik", sans-serif;
     color: var(--lightwhite);
