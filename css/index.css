@@ -477,8 +477,7 @@ div.projects-container .projects-wrapper .projects-cards {
     position: relative;
     margin: 40px 30px;
     padding: 20px 30px;
-    background: var(--darkmode_dark) url(../img/network.png) no-repeat right
-        bottom / contain;
+    background: var(--darkmode_dark) url(../img/circuit_bg.png) no-repeat center / cover;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 0 6px rgba(0, 0, 0, 0.4);
     border-radius: 6px;
     display: flex;
