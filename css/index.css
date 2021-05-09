@@ -211,7 +211,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 60px;
+    padding: 5px 60px;
     transition: all 0.5s ease;
     transition-delay: 0.1s;
     z-index: 10;
@@ -253,9 +253,27 @@ header nav a.navbar-brand span {
 header nav div.navbar-btn {
     margin: auto 5px;
     margin-left: auto;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+header nav div.navbar-btn span.menu-btn i {
+    margin: auto 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: var(--lightwhite);
+    background: var(--darkmode_light1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header nav div.navbar-btn span.menu-btn i:hover {
+    background: var(--lightviolet);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 header nav div.navbar-btn a {
@@ -276,6 +294,24 @@ header nav div.navbar-btn a img {
     padding: 2px;
     width: 32px;
     height: 32px;
+}
+
+header nav div.navbar-btn a.showOptions {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+header nav div.navbar-btn a.showOptions:nth-child(1) {
+    transition-delay: 0.1s;
+    transform: translate(-50%, 50%);
+}
+header nav div.navbar-btn a.showOptions:nth-child(2) {
+    transition-delay: 0.2s;
+    transform: translate(-50%, 170%);
+}
+header nav div.navbar-btn a.showOptions:nth-child(3) {
+    transition-delay: 0.3s;
+    transform: translate(-50%, 290%);
 }
 
 /*==================================== Banner =====================================*/

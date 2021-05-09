@@ -28,6 +28,12 @@ window.addEventListener("scroll", () => {
     }
 });
 
+// Menu Category Button Options
+
+$("span.menu-btn i").click(function () {
+    $("a.nav-link").toggleClass("showOptions");
+});
+
 // AOS Initialisation
 
 // AOS.init({

@@ -3,19 +3,26 @@
 
 /*===================================== Header Responsive =======================================*/
 
-@media (max-width: 768px) {
-    header {
-        padding: 10px 20px;
+@media (min-width: 472px) {
+    header nav div.navbar-btn span.menu-btn i {
+        display: none;
     }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 768px) {
+    header {
+        padding: 5px 20px;
+    }
+}
+
+@media (max-width: 576px) {
     header nav a.navbar-brand img {
         width: 38px;
     }
     header nav a.navbar-brand span {
         font-size: 1.4rem;
     }
+    header nav div.navbar-btn span.menu-btn i,
     header nav div.navbar-btn a {
         margin: auto 5px;
     }
@@ -25,12 +32,32 @@
     }
 }
 
-@media (max-width: 392px) {
-    header nav {
-        flex-direction: column;
+@media (max-width: 472px) {
+    header nav div.navbar-btn span.menu-btn {
+        z-index: 2;
     }
     header nav div.navbar-btn {
-        margin: 10px auto auto;
+        margin: auto -10px;
+    }
+    header nav div.navbar-btn a {
+        margin: 5px auto;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
+
+@media (max-width: 376px) {
+    header {
+        padding: 5px;
+    }
+    header nav a.navbar-brand span {
+        display: none;
+    }
+    header nav div.navbar-btn {
+        margin-left: auto;
     }
 }
 
@@ -201,6 +228,9 @@
     }
     div.projects-container .projects-wrapper .projects-cards {
         margin: 40px 30px;
+    }
+    div.projects-wrapper .projects-cards span.preview-links a i {
+        box-shadow: 0 2px 2px var(--lightblue);
     }
 }
 
