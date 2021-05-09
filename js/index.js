@@ -64,7 +64,7 @@ $.toast = Swal.mixin({
 $("a[href='javascript:void(0);']").click(function () {
     $.toast.fire({
         icon: "warning",
-        title: "<span class='text-warning'>Link wasn't Updated!</span>",
+        title: "<span class='text-warning'>Link haven't Updated!</span>",
     });
     $("a[href='javascript:void(0);']").attr("target", "_self");
 });
@@ -72,3 +72,12 @@ $("a[href='javascript:void(0);']").click(function () {
 $(document).ready(function () {
     $("a").attr("target", "_blank");
 });
+
+// Visitors Counter
+
+$.getJSON(
+    "https://api.countapi.xyz/hit/imniladri.in/projects",
+    function (response) {
+        $("#visits").text(response.value);
+    }
+);
