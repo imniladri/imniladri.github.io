@@ -622,10 +622,10 @@ footer div.footer img {
 footer div.footer h3 {
     margin: 10px auto;
     font-size: 1.8rem;
-    font-weight: 700;
-    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-family: "Android", sans-serif;
     color: var(--lightwhite);
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-align: center;
 }
 
