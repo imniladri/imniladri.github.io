@@ -16,9 +16,15 @@
     9. Toxico
    10. Prototype
    11. Evogria
+   12. Android
 */
 
 /* Source Files */
+
+@font-face {
+    font-family: "Android";
+    src: url("Android.ttf");
+}
 
 @font-face {
     font-family: "Gilroy";
