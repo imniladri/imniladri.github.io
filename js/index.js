@@ -34,6 +34,10 @@ $("span.menu-btn i").click(function () {
     $("a.nav-link").toggleClass("showOptions");
 });
 
+$(window).scroll(function () {
+    $("a.nav-link").removeClass("showOptions");
+});
+
 // AOS Initialisation
 
 // AOS.init({
