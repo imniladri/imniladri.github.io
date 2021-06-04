@@ -16,16 +16,8 @@ Preview || Links
 ```
 
 1. [My Portfolio](https://imniladri.in/)
-2. [App UI: PDF Chest](https://pdfchest.netlify.app/)
-3. [Friends Site](https://weare8.xyz/)
-4. [My Library Kit](https://mykit.xyz/)
-5. [Restaurant/Cafe Site](https://myresweb.netlify.app/)
-6. [Education Site](https://myeduweb.netlify.app/)
-7. [Library Site](https://mylibweb.netlify.app/)
-8. [My Site: Just 4 Fun](https://myselfnm.netlify.app/)
-9. [Food Mate](https://foodmate.vercel.app/)
-
-**_All are hosted in [Netlify](https://www.netlify.com/)_**
+2. [My Kit](https://mykit.xyz/)
+3. [My Site: Just 4 Fun](https://myselfnm.netlify.app/)
 
 <hr/>
 
@@ -37,10 +29,8 @@ Preview || Links
 Preview || Links
 ```
 
-1. [Portfolio Template](https://niloysikdar.github.io/awesome-portfolio-template/)
-2. [Food Mate](https://sourajeet-dey.github.io/FoodMate/)
-
-**_All are hosted in [GitHub](https://github.com/)_**
+1. [Portfolio Template](https://awesome-portfolio-template.vercel.app/)
+2. [Food Mate](https://imniladri.github.io/FoodMate/)
 
 <hr/>
 <br/>
